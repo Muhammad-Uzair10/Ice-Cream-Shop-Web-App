@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Life - Register</title>
+    <link rel="stylesheet" href="styles/register.css">
+</head>
+<body>
+    <header>
+        <h1 class="heading-text">Register at Sweet Life Ice Cream Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="features.html">Features</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="registration-info">
+        <h2>Complete the Registration Process</h2>
+    </div>
+    
+        
+    <main>
+        
+        <form id="registrationForm" action="#" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <div id="username_error" class="error"></div><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div id="password_error" class="error"></div><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div id="email_error" class="error"></div><br>
+
+            <label for="icecream">Favorite Ice Cream:</label>
+            <select id="icecream" name="icecream">
+                <option value="">Select your favorite</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="strawberry">Strawberry</option>
+                <!-- Add more options as needed -->
+            </select>
+            <div id="icecream_error" class="error"></div><br>
+
+            <label class="gender-label">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label class="gender-label" for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label class="gender-label" for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label class="gender-label" for="other">Other</label>
+            <div id="gender_error" class="error"></div><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </main>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    <script src="js/script3.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
